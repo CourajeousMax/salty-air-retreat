@@ -1,10 +1,10 @@
 import React from "react";
-
+import variables from "../../styles/variables.module.scss"
 const NavBar = () => {
   return (
     <div>
-      <h1>Esmeralda's Salty Air Retreat</h1>
-      <nav>
+      <nav className="nav" >
+        <h1>Esmeralda's Salty Air Retreat</h1>
         <a>About</a>
         <a>Shop</a>
         <a>Events</a>
