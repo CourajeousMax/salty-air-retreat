@@ -4,11 +4,15 @@ const NavBar = () => {
   return (
     <div>
       <nav className="nav" >
-        <h1>Esmeralda's Salty Air Retreat</h1>
-        <a>About</a>
-        <a>Shop</a>
-        <a>Events</a>
-        <a>About</a>
+        <div className="nav__title-container">
+        <h1 className= "nav__title page__header">Esmeralda's Salty Air Retreat</h1>
+        </div>
+        <ul class="nav__links">
+        <a Classname="nav__link nav-one">About</a>
+        <a Classname="nav__link nav-two">Shop</a>
+        <a Classname="nav__link nav-three">Events</a>
+        <a Classname="nav__link nav-four">About</a>
+        </ul>
       </nav>
     </div>
   );

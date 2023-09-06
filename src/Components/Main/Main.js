@@ -4,14 +4,20 @@ const Main = () => {
   return (
     <>
       <main>
-        <h2>Benefits of Himalayan Salt Lamps</h2>
-        <p>About himalayan salt lamps</p>
-        <Image className="hero__image" src="/Himalayan-Salt-lamp.jpg" width={129} height={77} />
-        <p>Himalayan Salt fact </p>
-        <Image className="hero__image" src="/salt-lamp.jpeg" width={129} height={77} />
-        <div>
-          <h2>Our Story</h2>
-          <h3>In the heart of Cauley Square</h3>
+        <section className="benefits">
+          <div className="benefits__subheader-container">
+            <h2 className="benefits__subheader">Benefits of Himalayan Salt Lamps</h2>
+          </div>
+          <div className="benefits__text-container">
+            <p className="benefits__text">About himalayan salt lamps</p>
+            <Image className="benefits__image" src="/Himalayan-Salt-lamp.jpg" width={129} height={77} />
+            <p>Himalayan Salt fact </p>
+            <Image className="benefits__image" src="/salt-lamp.jpeg" width={129} height={77} />
+          </div>
+        </section>
+        <div className="story">
+          <h2 className="story__subheader mobile-subheader">Our Story</h2>
+          <h3 className="story__subheader mobile-subheader-one">In the heart of Cauley Square</h3>
           <p>lorem ipsum</p>
           <section className="cauley">
             <section className="cauley__gallery">
@@ -47,11 +53,11 @@ const Main = () => {
           </section>
           <section className="events">
             <div>
-                <div>
-                    <h3>Events</h3>
-                    <h2> Join our spiritual community</h2>
-                    <p>See what we're up to</p>
-                </div>
+              <div>
+                <h3>Events</h3>
+                <h2> Join our spiritual community</h2>
+                <p>See what we're up to</p>
+              </div>
             </div>
           </section>
         </div>
