@@ -13,16 +13,28 @@ body {
 }
 .nav {
   background-color: $maroon;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+  }
   &__title-container {
     @include mobile {
     }
   }
   &__links {
-    display: flex;
-    justify-content: space-between;
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
   }
   &__link {
     color: $white;
@@ -40,23 +52,97 @@ body {
   @include mobile {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 30vh;
   }
+  @include tablet {
+    height: 48vh;
+    background-repeat: no-repeat;
+  }
+   @include desktop{
+    height: 48vh;
+    background-repeat: no-repeat;
+  }
   &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $white;
     box-shadow: $box-shadow-white;
   }
 }
+//info
 
+.info {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15rem;
+    padding: 2.5rem;
+  }
+  &__mobile {
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    @include mobile {
+      background-size: cover;
+      color: $white;
+      height: 30vh;
+      width: 60vw;
+      position: relative;
+      z-index: 1;
+    }
+    @include tablet {
+      height: 20vh;
+      width: 30vw;
+    }
+    @include desktop {
+      height: 60vh;
+      width: 20vw;
+    }
+  }
+  &__text-one {
+    background-image: url(../../public/stars.jpg);
+  }
+  &__text-two {
+    background-image: url(../../public/sunrise.jpg);
+  }
+  &__text-three {
+    background-image: url(../../public/plants.jpg);
+  }
+}
 //benefits
 
 .benefits {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $beige;
+  &__image {
+    @include mobile {
+      height: 20vh;
+      width: 40vw;
+      margin: 1rem;
+    }
+  }
   &__subheader-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   &__subheader {
     display: flex;
@@ -97,6 +183,41 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+.instructor {
+  &__text {
+    padding: 0.5rem;
+  }
+  &__title {
+    padding: 1rem;
+  }
+  &__image {
+    padding: 1rem;
+    box-shadow: $box-shadow;
+    border-radius: 25px;
+    @include tablet {
+      width: 66vw;
+      height: 56vh;
+      margin: 5rem;
+    }
+  }
+  &__about {
+    padding:4rem;
+  }
+  &__container {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include tablet {
+            display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }
 // body {
