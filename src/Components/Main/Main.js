@@ -68,17 +68,20 @@ const Main = () => {
           </section>
           <section className="instructor">
             <div className="instructor__title-container">
-              <h2 className="instructor__title">Meet MJ </h2>
+              <h3 className="iinstructor__title">Your reiki master teacher and guide</h3>
+              <h2 className="instructor__title">MJ Gonzalez</h2>
             </div>
             <div className="instructor__container">
-              <Image className="instructor__image" src="/mj.JPG" width={200} height={300} />
-              <div className="instructor__about">
-                <p className="instructor__text">
+              <div className="instructor__container-image">
+                <Image className="instructor__image" src="/mj.JPG" width={200} height={300} />
+                <p className="instructor__image-text">
                   {" "}
                   Rev. MJ Gonzalez started growing into her spirituality by the age of 6 when she sawher first apparition standing behind a friend at
                   her favored Creek she would visit daily behind her childhood home. She was given, by the Divine, all the Clairs at a very young age.
                   As she grew, the Clairs grew stronger.{" "}
                 </p>
+              </div>
+              <div className="instructor__about">
                 <p className="instructore__text">Her spiritual modalities are, but not limted to:</p>
                 <ul className="instructor__list">
                   <li>Clairsentience</li>
