@@ -49,6 +49,10 @@ body {
 .hero {
   background-image: url(../../public/esar-logo.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 60vh;
+  overflow-x: hidden;
   @include mobile {
     display: flex;
     align-items: center;
@@ -61,8 +65,9 @@ body {
     background-repeat: no-repeat;
   }
   @include desktop {
-    height: 48vh;
+    height: 60vh;
     background-repeat: no-repeat;
+    object-fit: scale-down;
   }
   &__title {
     display: flex;
@@ -75,13 +80,11 @@ body {
 //info
 
 .info {
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -96,9 +99,17 @@ body {
     gap: 15rem;
     padding: 2.5rem;
   }
+  &__text {
+    position: absolute;
+    &-container {
+      position: relative;
+    }
+  }
   &__mobile {
     border-radius: 5px;
     box-shadow: $box-shadow;
+    object-fit: cover;
+    position: absolute;
     @include mobile {
       background-size: cover;
       color: $white;
@@ -115,15 +126,6 @@ body {
       height: 60vh;
       width: 20vw;
     }
-  }
-  &__text-one {
-    background-image: url(../../public/stars.jpg);
-  }
-  &__text-two {
-    background-image: url(../../public/sunrise.jpg);
-  }
-  &__text-three {
-    background-image: url(../../public/plants.jpg);
   }
 }
 //benefits
@@ -159,6 +161,13 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 1rem 1rem;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__text {
+    line-height: 25px;
   }
 }
 
@@ -198,10 +207,12 @@ body {
 }
 .instructor {
   background-color: $beige;
+  height: 67vh;
   &__container {
     @include mobile {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
     @include tablet {
       display: flex;
@@ -210,20 +221,19 @@ body {
     @include desktop {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
     }
   }
   &__text {
     padding: 0.5rem;
   }
   &__title {
-    @include mobile {
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include tablet {
-      padding: 1rem;
+      padding-top: 0.3rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -236,13 +246,13 @@ body {
     border-radius: 25px;
     @include tablet {
       width: 35vw;
-      height: 100%;
+      height: 50vh;
       margin: 3rem;
     }
     @include desktop {
-      width: 30vw;
-      height: 60%;
-      margin: 4rem;
+      width: 20vw;
+      height: 56vh;
+      margin: 2rem;
     }
     &-text {
       margin: 1rem;
@@ -251,33 +261,28 @@ body {
   &__about {
     padding: 4rem;
     @include desktop {
-      margin: 5rem;
-    }
-  }
-  &__container-image {
-    @include mobile {
       display: flex;
-      justify-content: center;
       flex-direction: column;
-      align-items: center;
-    }
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
     }
   }
 }
-// body {
-//   color: rgb(var(--foreground-rgb));
-//   background: linear-gradient(
-//       to bottom,
-//       transparent,
-//       rgb(var(--background-end-rgb))
-//     )
-//     rgb(var(--background-start-rgb));
-// }
+
+.events {
+
+  &__container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__button {
+    border-radius: 25px;
+    border: none;
+    background-color: $maroon;
+    color: $white;
+    width: 20%;
+    height: 2.8vw;
+  }
+}
 a {
   color: $white;
 }
