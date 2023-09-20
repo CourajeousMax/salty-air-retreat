@@ -3,10 +3,11 @@ import Image from "next/image";
 import Stars from "../../../public/stars.jpg";
 import Sunrise from "../../../public/sunrise.jpg";
 import Plants from "../../../public/plants.jpg";
+import Link from "next/link";
 const Main = () => {
   const pics = [Stars, Sunrise, Plants];
   const picNames = ["Stars", "Sunrise", "Plants"];
-  
+
   return (
     <>
       <main>
@@ -116,7 +117,7 @@ const Main = () => {
             <h2> Join our spiritual community</h2>
             <p>See what we're up to</p>
             <div className="events__container-info">
-              <button className="events__button">Events </button>
+              <Link className="events__button" href="/events">Events </Link>
             </div>
           </div>
         </div>
