@@ -7,7 +7,15 @@ import Link from "next/link";
 const Main = () => {
   const pics = [Stars, Sunrise, Plants];
   const picNames = ["Stars", "Sunrise", "Plants"];
-
+  const content = [
+    <strong>1. Mineral Soak</strong>,
+    "Mineral Soak Salt and mineral baths are a great way to relax at the end of the day while simultaneously infusing the skin and body with minerals and hydration. Through the process of dermal absorption, skin soaks up minerals from the water - often better than if the same minerals were consumed internally. Because it contains so many of the different minerals our bodies need to stay healthy, when it comes to the best things to put in your bath water, Himalayan pink salt is at the top of the list.",
+    <strong>2. Soothe Away Soreness</strong>,
+    "A warm bath infused with Himalayan pink salt is also great for relaxing cramped muscles. The magnesium and some other trace minerals found in H.P.S. absorb through the skin to help heal damaged muscle and other soft tissues. Minerals in H.P.S. also work to fortify bones, skin, and connective tissues that may contribute to body soreness in other ways.",
+    <strong>3. Detoxification</strong>,
+    "When H.P.S. is added to a bath of warm (preferably about the same as body temperature) water, it not only provides much-needed nutrients to your body. Himalayan pink salt also works as a powerful detoxifier. When dissolved in water, H.P.S. becomes an ionic solution that helps to draw the toxins out of skin and adipose tissues. This process combined with the healing mineral infusion offered by a good Himalayan pink salt soak will leave you feeling refreshed and energized. Bath Salts: Bath salts are great for soaking in. The ancient Greeks even recommended seaside health resorts in order to help cure skin diseases, and 16th-century physician and alchemist Paracelsus proclaimed that a salt bath was 'better than all the health spas arising out of nature.' Himalayan salt baths take it to a whole new level. Since Himalayan Salt is rich in minerals, soaking in a solution of bath water infused with it allows the skin to soak up these minerals including calcium, copper, iodine, iron, magnesium, manganese, phosphorus, potassium, selenium, sodium, and zinc in a process known as dermal absorption.",
+  ];
+const renderedListItems = content.map((text, index) => <li key={index} className="explaining__list-items">{text}</li>);
   return (
     <>
       <main>
@@ -20,6 +28,36 @@ const Main = () => {
               </div>
             </div>
           ))}
+        </section>
+        <section className="salt">
+          <h2 className="salt__title">Soothing Salts</h2>
+          <h3 className="salt__subtitle">Why salt?</h3>
+          <p className="salt__paragraph">
+            {" "}
+            Your skin is an excretory organ that mirrors the condition of your intestines. When you take a salt water (brine) bath, the salt minerals
+            penetrate your skin in the form of ions. This stimulation will cause natural cell growth in your living cell layers. Bio-energetic weak
+            points will be balanced and your body's energy flow will be activated. While anyone can benefit from a brine bath, it is particularly
+            soothing for those with:
+          </p>
+          <ul className="salt__benefits">
+            {[
+              "Various Skin Diseases",
+              "Rheumatism and joint diseases",
+              "A post-operative care regimen",
+              "Recurring infections",
+              "Severe insect bites, blisters or wounds",
+              "Skin irritations from poison oak, ivy or sumac",
+            ].map((salt, index) => (
+              <li className="salt__benefits-list" key={index}>
+                {salt}
+              </li>
+            ))}
+          </ul>
+        </section>
+        <section className="explaining">
+          <ol className="explaining__list">
+            {renderedListItems}
+          </ol>
         </section>
         <section className="benefits">
           <div className="benefits__subheader-container">
@@ -45,6 +83,51 @@ const Main = () => {
             </div>
           </div>
         </section>
+        <article className="instructor">
+          <h3 className="instructor__title">Your reiki master teacher and guide</h3>
+          <h2 className="instructor__title">MJ Gonzalez</h2>
+          <div className="instructor__container">
+            <Image className="instructor__image" src="/mj.JPG" width={200} height={300} />
+            <div className="instructor__about">
+              <p className="instructor__text">
+                {" "}
+                Rev. MJ Gonzalez started growing into her spirituality by the age of 6 when she sawher first apparition standing behind a friend at
+                her favored Creek she would visit daily behind her childhood home. She was given, by the Divine, all the Clairs at a very young age.
+                As she grew, the Clairs grew stronger.{" "}
+              </p>
+              <p className="instructore__text">Her spiritual modalities are, but not limted to:</p>
+              <ul className="instructor__list">
+                {" "}
+                <ul className="instructor__list">
+                  {["Clairsentience", "Clairvoyance", "Clairaudience", "Claircognizance", "Clairalience", "Clairgustance"].map((clair, index) => (
+                    <li key={index}>{clair}</li>
+                  ))}
+                </ul>
+              </ul>
+              <p className="instructor__text">
+                Home, Office, and Vehicle Energy vehicle removal, Cleanser and Protection Gridding (entities, spirits, ghosts, energes, implant and
+                portals)
+              </p>
+              <p className="instructor__text">Personal Manifestations and Home/Business Gridder, Candle Imagery Reader, Energy Orb Reader</p>
+              <p className="instructor__text">Energist(Capable of holding up to 100 people energy for ceremonies)</p>
+              <ul className="instructor__list">
+                {[
+                  "Aura Reader and Teacher",
+                  "Reiki Master Therapist of Light Therapy XII",
+                  "Spiritual Interpretation Reader",
+                  "Pendulum Practitioner",
+                  "Intuitive Practitioner",
+                  "Spiritual Surgery",
+                  "Energetics System Practitioner",
+                  "Ionic Foot Detox",
+                  "Infrared Detox",
+                ].map((modality, index) => (
+                  <li key={index}>{modality}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </article>
         <div className="story">
           <div className="story__container">
             <h2 className="story__subheader mobile-subheader">Our Story</h2>
@@ -63,51 +146,6 @@ const Main = () => {
               ))}
             </section>
           </section>
-          <article className="instructor">
-            <h3 className="instructor__title">Your reiki master teacher and guide</h3>
-            <h2 className="instructor__title">MJ Gonzalez</h2>
-            <div className="instructor__container">
-              <Image className="instructor__image" src="/mj.JPG" width={200} height={300} />
-              <div className="instructor__about">
-                <p className="instructor__text">
-                  {" "}
-                  Rev. MJ Gonzalez started growing into her spirituality by the age of 6 when she sawher first apparition standing behind a friend at
-                  her favored Creek she would visit daily behind her childhood home. She was given, by the Divine, all the Clairs at a very young age.
-                  As she grew, the Clairs grew stronger.{" "}
-                </p>
-                <p className="instructore__text">Her spiritual modalities are, but not limted to:</p>
-                <ul className="instructor__list">
-                  {" "}
-                  <ul className="instructor__list">
-                    {["Clairsentience", "Clairvoyance", "Clairaudience", "Claircognizance", "Clairalience", "Clairgustance"].map((clair, index) => (
-                      <li key={index}>{clair}</li>
-                    ))}
-                  </ul>
-                </ul>
-                <p className="instructor__text">
-                  Home, Office, and Vehicle Energy vehicle removal, Cleanser and Protection Gridding (entities, spirits, ghosts, energes, implant and
-                  portals)
-                </p>
-                <p className="instructor__text">Personal Manifestations and Home/Business Gridder, Candle Imagery Reader, Energy Orb Reader</p>
-                <p className="instructor__text">Energist(Capable of holding up to 100 people energy for ceremonies)</p>
-                <ul className="instructor__list">
-                  {[
-                    "Aura Reader and Teacher",
-                    "Reiki Master Therapist of Light Therapy XII",
-                    "Spiritual Interpretation Reader",
-                    "Pendulum Practitioner",
-                    "Intuitive Practitioner",
-                    "Spiritual Surgery",
-                    "Energetics System Practitioner",
-                    "Ionic Foot Detox",
-                    "Infrared Detox",
-                  ].map((modality, index) => (
-                    <li key={index}>{modality}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </article>
         </div>
       </main>
       <section className="events">
@@ -117,7 +155,9 @@ const Main = () => {
             <h2> Join our spiritual community</h2>
             <p>See what we're up to</p>
             <div className="events__container-info">
-              <Link className="events__button" href="/events">Events </Link>
+              <Link className="events__button" href="/events">
+                Events{" "}
+              </Link>
             </div>
           </div>
         </div>
