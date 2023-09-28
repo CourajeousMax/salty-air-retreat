@@ -5,8 +5,7 @@ import Sunrise from "../../../public/sunrise.jpg";
 import Plants from "../../../public/plants.jpg";
 import Link from "next/link";
 const Main = () => {
-  const pics = [Stars, Sunrise, Plants];
-  const picNames = ["Stars", "Sunrise", "Plants"];
+
   const content = [
     <strong>1. Mineral Soak</strong>,
     "Mineral Soak Salt and mineral baths are a great way to relax at the end of the day while simultaneously infusing the skin and body with minerals and hydration. Through the process of dermal absorption, skin soaks up minerals from the water - often better than if the same minerals were consumed internally. Because it contains so many of the different minerals our bodies need to stay healthy, when it comes to the best things to put in your bath water, Himalayan pink salt is at the top of the list.",
@@ -19,16 +18,17 @@ const renderedListItems = content.map((text, index) => <li key={index} className
   return (
     <>
       <main>
-        <section className="info">
-          {["Classes & Events", "Guidance & Mentorship", "Start your spiritual journey"].map((text, index) => (
-            <div className="info__container">
-              <div className="info__text-container">
-                <Image src={pics[index]} alt={picNames[index]} className="info__mobile" width={200} height={420} />
-                <p className={`info__mobile-${index + 1} info__text`}>{text}</p>
-              </div>
-            </div>
-          ))}
-        </section>
+        {/* <section className="info">
+          <div className="info__container">
+            <div className="info__text-container">
+              {/* <Image src={Stars} className="info__mobile" /> */}
+              {/* <p className="info__text">Classes & Events</p> */}
+              {/* <Image src={Sunrise} className="info__mobile" /> */}
+              {/* <p className="info__text">Guidance & Mentorship</p> */}
+              {/* <Image src={Plants} className="info__mobile" /> */}
+            {/* </div> */}
+          {/* </div> */}
+       {/* </section> */}
         <section className="salt">
           <h2 className="salt__title">Soothing Salts</h2>
           <h3 className="salt__subtitle">Why salt?</h3>
@@ -55,9 +55,7 @@ const renderedListItems = content.map((text, index) => <li key={index} className
           </ul>
         </section>
         <section className="explaining">
-          <ol className="explaining__list">
-            {renderedListItems}
-          </ol>
+          <ol className="explaining__list">{renderedListItems}</ol>
         </section>
         <section className="benefits">
           <div className="benefits__subheader-container">
