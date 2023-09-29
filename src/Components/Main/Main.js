@@ -1,8 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Stars from "../../../public/stars.jpg";
-import Sunrise from "../../../public/sunrise.jpg";
-import Plants from "../../../public/plants.jpg";
 import Link from "next/link";
 const Main = () => {
 
@@ -18,17 +15,6 @@ const renderedListItems = content.map((text, index) => <li key={index} className
   return (
     <>
       <main>
-        {/* <section className="info">
-          <div className="info__container">
-            <div className="info__text-container">
-              {/* <Image src={Stars} className="info__mobile" /> */}
-              {/* <p className="info__text">Classes & Events</p> */}
-              {/* <Image src={Sunrise} className="info__mobile" /> */}
-              {/* <p className="info__text">Guidance & Mentorship</p> */}
-              {/* <Image src={Plants} className="info__mobile" /> */}
-            {/* </div> */}
-          {/* </div> */}
-       {/* </section> */}
         <section className="salt">
           <h2 className="salt__title">Soothing Salts</h2>
           <h3 className="salt__subtitle">Why salt?</h3>
@@ -53,9 +39,11 @@ const renderedListItems = content.map((text, index) => <li key={index} className
               </li>
             ))}
           </ul>
-        </section>
-        <section className="explaining">
-          <ol className="explaining__list">{renderedListItems}</ol>
+            <h2>Soaking in Himalayan Salt: The Benefits</h2>
+          <section className="explaining">
+            <Image className="explaining__image" src="/salt.jpg" width={300} height={250} />
+            <ol className="explaining__list">{renderedListItems}</ol>
+          </section>
         </section>
         <section className="benefits">
           <div className="benefits__subheader-container">
@@ -93,7 +81,7 @@ const renderedListItems = content.map((text, index) => <li key={index} className
                 her favored Creek she would visit daily behind her childhood home. She was given, by the Divine, all the Clairs at a very young age.
                 As she grew, the Clairs grew stronger.{" "}
               </p>
-              <p className="instructore__text">Her spiritual modalities are, but not limted to:</p>
+              <p className="instructor__text">Her spiritual modalities are, but not limted to:</p>
               <ul className="instructor__list">
                 {" "}
                 <ul className="instructor__list">
@@ -126,7 +114,7 @@ const renderedListItems = content.map((text, index) => <li key={index} className
             </div>
           </div>
         </article>
-        <div className="story">
+        <div id="story">
           <div className="story__container">
             <h2 className="story__subheader mobile-subheader">Our Story</h2>
             <h3 className="story__subheader mobile-subheader-one">In the heart of Cauley Square</h3>
