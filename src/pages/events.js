@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../Components/NavBar/NavBar';
 import AppointmentForm from '@/Components/AppointmentForm/AppointmentForm';
+import Footer from '@/Components/Footer/Footer';
 import Image from 'next/image';
 import Stars from "../../public/stars.jpg";
 import Sunrise from "../../public/sunrise.jpg";
@@ -73,6 +74,7 @@ const events = () => {
             </form>
           </div>
         </LocalizationProvider>
+        <Footer />
       </div>
     );
 };

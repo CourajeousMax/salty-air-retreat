@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../Footer/Footer";
 const Main = () => {
 
   const content = [
@@ -133,9 +134,7 @@ const renderedListItems = content.map((text, index) => <li key={index} className
             </section>
           </section>
         </div>
-      </main>
       <section className="events">
-        <div>
           <div className="events__container">
             <h3>Events</h3>
             <h2> Join our spiritual community</h2>
@@ -146,8 +145,9 @@ const renderedListItems = content.map((text, index) => <li key={index} className
               </Link>
             </div>
           </div>
-        </div>
       </section>
+          <Footer />
+      </main>
     </>
   );
 };

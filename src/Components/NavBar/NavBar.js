@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import variables from "../../styles/variables.module.scss";
+import { Instagram, Facebook } from "@mui/icons-material";
+
 const NavBar = () => {
   return (
     <div>
@@ -19,8 +20,12 @@ const NavBar = () => {
           <Link Classname="nav__link nav-three" href="/events">
             Events
           </Link>
-          {/* 
-          <a Classname="nav__link nav-four">Offerings</a> */}
+          <a href="https://www.instagram.com/esmeraldassaltyairretreat/?hl=en" target="_blank" rel="noopener noreferrer">
+            <Instagram />
+          </a>
+          <a href="https://www.facebook.com/EsmeraldasEarthWindAndFireBoutiqueLLC/" target="_blank" rel="noopener noreferrer">
+            <Facebook />
+          </a>
         </ul>
       </nav>
     </div>
