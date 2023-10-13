@@ -10,7 +10,7 @@ const Footer = () => {
               Stay in Touch
             </h2>
             <a className="footer__icon" href="https://www.instagram.com/esmeraldassaltyairretreat/?hl=en" target="_blank" rel="noopener noreferrer">
-              <Instagram />
+              <Instagram style={{ fontSize: "36px" }} />
             </a>
             <a
               className="footer__icon"
@@ -18,10 +18,10 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Facebook />
+              <Facebook style={{ fontSize: "36px" }} />
             </a>
             <a className="footer__icon" href="https://www.youtube.com/@esmeraldasearthwindandfire4390" target="_blank" rel="noopener noreferrer">
-              <YouTube />
+              <YouTube style={{ fontSize: "36px" }} />
             </a>
           </section>
         </div>

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Stars from "../../public/stars.jpg";
 import Sunrise from "../../public/sunrise.jpg";
 import Plants from "../../public/plants.jpg";
+import { useState } from 'react';
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
@@ -22,6 +23,21 @@ const events = () => {
       justifyContent: "start", 
       margin: "48px 90px", 
     });
+
+    const availableAppointments = [
+      {
+        date: "2023-10-10",
+        times: ["10:00 AM", "11:00 AM", "2:00 PM", "3:00 PM"],
+      },
+      {
+        date: "2023-10-11",
+        times: ["9:00 AM", "10:00 AM", "1:00 PM", "2:00 PM"],
+      },
+      // Add more dates and times as needed
+    ];
+
+    const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedTime, setSelectedTime] = useState(null);
     return (
       <div>
         <NavBar />
@@ -59,8 +75,30 @@ const events = () => {
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <div className="signup">
             <CustomMuiPickersLayoutRoot>
-              <StaticDatePicker orientation="portrait" />
+              <StaticDatePicker
+                orientation="portrait"
+                value={selectedDate}
+                onChange={(date) => setSelectedDate(date)}
+                renderInput={(params) => <TextField {...params} />}
+              />
             </CustomMuiPickersLayoutRoot>
+            <div>
+              <h2>Select an appointment time:</h2>
+              {selectedDate && (
+                <select onChange={(e) => setSelectedTime(e.target.value)} value={selectedTime}>
+                  <option value="">Select a time</option>
+                  {availableAppointments.map((appointment) =>
+                    appointment.date === selectedDate
+                      ? appointment.times.map((time) => (
+                          <option key={time} value={time}>
+                            {time}
+                          </option>
+                        ))
+                      : null
+                  )}
+                </select>
+              )}
+            </div>
             <form className="signup__form">
               <h2 className="signup__page-header">Book an appointment today!</h2>
               <div className="signup__container">

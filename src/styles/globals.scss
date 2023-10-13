@@ -18,7 +18,11 @@ body {
 }
 
 .nav {
-  background-color: $maroon;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.8);
   @include mobile {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 12vh;
+    height: 9.5vh;
   }
   &__title {
     margin-left: 20px;
@@ -39,15 +43,12 @@ body {
     flex-direction: row;
     align-items: center;
     margin: 5px;
-    // @include tablet{
-    //   display: flex;
-    // flex-direction: column;
-    // }
   }
   &__links {
     @include mobile {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 1rem;
     }
   }
@@ -60,14 +61,18 @@ body {
 }
 
 //Hero section
-
 .hero {
-  background-image: url(../../public/esar-logo.jpg);
+  background-image: url(../../public/cave.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 60vh;
   overflow-x: hidden;
+  filter: grayscale(2);
+  transition: filter 5s;
+  &:hover {
+    filter: none;
+  }
   @include mobile {
     display: flex;
     align-items: center;
@@ -80,22 +85,27 @@ body {
     background-repeat: no-repeat;
   }
   @include desktop {
-    height: 60vh;
     background-repeat: no-repeat;
+    background-size: cover;
     object-fit: scale-down;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: stretch;
   }
   &__title {
     display: flex;
     align-items: center;
     justify-content: center;
     color: $white;
-    box-shadow: $box-shadow-white;
+    border-bottom: 0.3rem solid $maroon;
   }
 }
 //info
 .info {
   display: flex;
   flex-direction: column;
+  background-color: $bone;
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -137,26 +147,66 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  background-color: $bone;
+  border-top: #323232;
+  margin: 5rem;
+  &__title-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+&__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black; /* Add a black border with a 2px width */
+  padding: 20px; 
+  }
+  &__gallery-container {
+    display: flex;
+    flex-direction: row;
+  }
   &__paragraph {
-    padding: 1rem 0 1rem 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+    line-height: 3rem;
   }
   &__benefits {
     @include desktop {
       display: flex;
       flex-direction: row;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      margin-top: 0;
     }
     &-list {
       margin: 0.5rem;
     }
   }
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three equal-width columns */
+  grid-gap: 10px;
+  padding: 2rem;
+}
 .explaining {
   display: flex;
   flex-direction: row;
   align-items: center;
+  &__title{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid ;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
   &__list {
-    margin: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 0;
   }
 }
 //benefits
@@ -202,6 +252,11 @@ body {
   }
 }
 
+.story{
+  &__text{
+    padding:2rem;
+  }
+}
 #story {
   display: flex;
   justify-content: center;
@@ -214,7 +269,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 1rem;
   &__subheader {
     display: flex;
     justify-content: center;
@@ -237,25 +291,14 @@ body {
   }
 }
 .instructor {
-  background-color: $beige;
-  height: 70vh;
+  background-color: $bone;
+  padding: 1rem 1rem 1rem 1rem;
   margin: 2rem;
-  &__container {
-    @include mobile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-    }
-    @include desktop {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-    }
+  line-height: 2rem;
+  &__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   &__text {
     padding: 0.5rem;
@@ -282,8 +325,8 @@ body {
       margin: 3rem;
     }
     @include desktop {
-      width: 20vw;
-      height: 56vh;
+      width: 15%;
+      height: 15%;
       margin: 1rem;
     }
     &-text {
@@ -379,7 +422,12 @@ li {
 a {
   color: $white;
   text-decoration: none;
+  transition: text-decoration 0.3s;
+  &:hover {
+    border-bottom: 4px solid $white;
+  }
 }
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -392,11 +440,11 @@ a {
   &__container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 1rem;
   }
   &__address {
-    display:flex;
+    display: flex;
     justify-content: center;
   }
   &__icon {

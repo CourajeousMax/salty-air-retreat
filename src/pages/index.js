@@ -13,7 +13,6 @@ export default function Home() {
       <Head>
         <title>Esmeralda's Salty Air Retreat</title>
       </Head>
-      <NavBar />
       <Header />
       <Main />
     </>

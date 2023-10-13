@@ -9,7 +9,6 @@ const NavBar = () => {
       <nav className="nav">
         <Link href="/">
           <div className="nav__title-container">
-            <Image src="/esar-logo.jpg" width={150} height={100} />
             <h1 className="nav__title page__header">Esmeralda's Salty Air Retreat</h1>
           </div>
         </Link>
