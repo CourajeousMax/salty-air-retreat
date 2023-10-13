@@ -1,41 +1,15 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Instagram, Facebook } from "@mui/icons-material";
+import NavBar from "../NavBar/NavBar";
+
 
 const Header = () => {
   return (
     <>
       <div className="hero">
-        <h1 className="hero__title ">Welcome to your spiritual home</h1>
+    <NavBar />
+        <div className="hero__container">
         <h2 className="hero__title">Salty Air Retreat</h2>
-        <div>
-          <nav className="nav">
-            <Link href="/">
-              <div className="nav__title-container">
-                <h1 className="nav__title page__header">Esmeralda's Salty Air Retreat</h1>
-              </div>
-            </Link>
-            <ul class="nav__links">
-              <Link Classname="nav__link nav-one" href="#story" style={{ fontSize: "18px" }}>
-                About
-              </Link>
-              <Link Classname="nav__link nav-three" href="/events" style={{ fontSize: "18px" }}>
-                Events
-              </Link>
-              <a className="nav__icon" href="https://www.instagram.com/esmeraldassaltyairretreat/?hl=en" target="_blank" rel="noopener noreferrer">
-                <Instagram style={{ fontSize: "40px" }} />
-              </a>
-              <a
-                className="nav__icon"
-                href="https://www.facebook.com/EsmeraldasEarthWindAndFireBoutiqueLLC/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook style={{ fontSize: "40px" }} />
-              </a>
-            </ul>
-          </nav>
+        <h1 className="hero__title ">Welcome to your spiritual home</h1>
         </div>
       </div>
     </>

@@ -1,6 +1,8 @@
 import React from 'react';
+import Header from '@/Components/Header/Header';
 import NavBar from '../Components/NavBar/NavBar';
 import AppointmentForm from '@/Components/AppointmentForm/AppointmentForm';
+import Schedule from '@/Components/Schedule/Schedule';
 import Footer from '@/Components/Footer/Footer';
 import Image from 'next/image';
 import Stars from "../../public/stars.jpg";
@@ -36,17 +38,16 @@ const events = () => {
       // Add more dates and times as needed
     ];
 
-    const [selectedDate, setSelectedDate] = useState(null);
-    const [selectedTime, setSelectedTime] = useState(null);
+
     return (
       <div>
-        <NavBar />
-        <h1>Discovering Inner Peace Here</h1>
+        <Header />
+        <h1 className='info__title'> Discovering Inner Peace Here</h1>
         <section className="info">
           <div className="info__container">
             <div className="info__item">
               <Image src={Stars} className="info__mobile" width={375} height={500} />
-              <p className="info__text">Classes & Events</p>
+              <h2 className="info__text">Classes & Events</h2>
               <p className="info__subtext">
                 There are a variety of classes and events to attend. From Reiki Circles, Mala Making and Chanting, Chime Classes to Guided Meditations
                 and celebratory events such as the Bodhi Festival. Learn how to empower your energy and/or restore your chakras and energy.
@@ -54,7 +55,7 @@ const events = () => {
             </div>
             <div className="info__item">
               <Image src={Sunrise} className="info__mobile" width={400} height={500} />
-              <p className="info__text">Guidance & Mentorship</p>
+              <h2 className="info__text">Guidance & Mentorship</h2>
               <p className="info__subtext">
                 Walk your sacred path and find solace in the assurance that you are not alone in your quest for inner peace and enlightment. In the
                 embrace of mentorship, embark on a transformative journey, nurture your spirits and connectwith the divine presence that resides both
@@ -63,7 +64,7 @@ const events = () => {
             </div>
             <div className="info__item">
               <Image src={Plants} className="info__mobile" width={400} height={500} />
-              <p className="info__text">Start your spriritual journey today</p>
+              <h2 className="info__text">Start your spriritual journey today</h2>
               <p className="info__subtext">
                 Your spiritual journey begins with a simple commitment—to seek, to learn, to grow. It is a quest to understand the essence of your
                 existence, to find meaning in life's mysteries, and to uncover the divine spark within you. As you take those initial steps, remember
@@ -72,33 +73,15 @@ const events = () => {
             </div>
           </div>
         </section>
+              <Schedule />
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <div className="signup">
             <CustomMuiPickersLayoutRoot>
               <StaticDatePicker
                 orientation="portrait"
-                value={selectedDate}
-                onChange={(date) => setSelectedDate(date)}
-                renderInput={(params) => <TextField {...params} />}
               />
             </CustomMuiPickersLayoutRoot>
-            <div>
-              <h2>Select an appointment time:</h2>
-              {selectedDate && (
-                <select onChange={(e) => setSelectedTime(e.target.value)} value={selectedTime}>
-                  <option value="">Select a time</option>
-                  {availableAppointments.map((appointment) =>
-                    appointment.date === selectedDate
-                      ? appointment.times.map((time) => (
-                          <option key={time} value={time}>
-                            {time}
-                          </option>
-                        ))
-                      : null
-                  )}
-                </select>
-              )}
-            </div>
+            
             <form className="signup__form">
               <h2 className="signup__page-header">Book an appointment today!</h2>
               <div className="signup__container">

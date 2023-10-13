@@ -176,12 +176,15 @@ const Main = () => {
               ))}
             </section>
           </section>
+          <div className="cauley__hours">
+
+          </div>
         </div>
         <section className="events">
           <div className="events__container">
-            <h3>Events</h3>
-            <h2> Join our spiritual community</h2>
-            <p>See what we're up to</p>
+            <h3 className="page__header">Events</h3>
+            <h2 className="page__header"> Join our spiritual community</h2>
+            <p className="page__header">See what we're up to</p>
             <div className="events__container-info">
               <Link className="events__button" href="/events">
                 Events{" "}
