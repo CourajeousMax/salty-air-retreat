@@ -125,36 +125,6 @@ const Main = () => {
                 With her vast range of spiritual abilities and deep-rooted connection to the metaphysical, Rev. MJ Gonzalez offers a holistic approach
                 to healing and guidance, making a significant impact in the lives of those she serves.
               </p>
-              {/* <p className="instructor__text">Her spiritual modalities are, but not limited to:</p>
-              <ul className="instructor__list">
-                {" "}
-                <ul className="instructor__list">
-                  {["Clairsentience", "Clairvoyance", "Clairaudience", "Claircognizance", "Clairalience", "Clairgustance"].map((clair, index) => (
-                    <li key={index}>{clair}</li>
-                  ))}
-                </ul>
-              </ul>
-              <p className="instructor__text">
-                Home, Office, and Vehicle Energy vehicle removal, Cleanser and Protection Gridding (entities, spirits, ghosts, energes, implant and
-                portals)
-              </p>
-              <p className="instructor__text">Personal Manifestations and Home/Business Gridder, Candle Imagery Reader, Energy Orb Reader</p>
-              <p className="instructor__text">Energist(Capable of holding up to 100 people energy for ceremonies)</p>
-              <ul className="instructor__list">
-                {[
-                  "Aura Reader and Teacher",
-                  "Reiki Master Therapist of Light Therapy XII",
-                  "Spiritual Interpretation Reader",
-                  "Pendulum Practitioner",
-                  "Intuitive Practitioner",
-                  "Spiritual Surgery",
-                  "Energetics System Practitioner",
-                  "Ionic Foot Detox",
-                  "Infrared Detox",
-                ].map((modality, index) => (
-                  <li key={index}>{modality}</li>
-                ))}
-              </ul> */}
             </div>
           </article>
         </div>

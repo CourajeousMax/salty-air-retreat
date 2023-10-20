@@ -5,7 +5,8 @@ const AppointmentForm = ({ label, name, type }) => {
       <div>
         <div className="input__box">
           <label className="input__label">{label}</label>
-          <input type={type} name={name} placeholder={label} className="input__input" />
+          <input type={type} name={name} placeholder={label} className="input__input" required />
+
         </div>
       </div>
     </div>
