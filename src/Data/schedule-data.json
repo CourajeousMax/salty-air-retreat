@@ -1,161 +1,58 @@
 [
   {
-    "Date": "Oct. 13, Friday",
-    "time": "5:30PM - 8:30PM",
-    "event": "Pendulum I",
-    "price": "$55",
-    "instructor": "Kim"
+    "Date": "Nov. 3, Friday",
+    "time": "7:00PM - 9:00PM",
+    "event": "Mala Making Class, Materials Included",
+    "price": "$55.55",
+    "instructor": "Lee"
   },
   {
-    "Date": "Oct. 14, Saturday",
-    "time": "8AM - 12PM",
-    "event": "LT Reiki I",
-    "price": "$260",
-    "instructor": "Kim"
+    "Date": "Nov. 10, Friday",
+    "time": "7:00PM - 9:00PM",
+    "event": "Learn To Make a Crystal - Suggested tools: Glue Guns W/ Glue & Crystal of your Choice",
+    "price": "$55.55",
+    "instructor": "Lee"
   },
   {
-    "Date": "Oct. 14, Saturday",
-    "time": "5PM - 9:30PM",
-    "event": "LT Reiki II",
-    "price": "$260",
-    "instructor": "Kim"
+    "Date": "Nov. 11, Saturday",
+    "time": "8:30AM - 10:00PM",
+    "event": "2 in 1 Guided Meditation & Make your own Agate Wind Chime",
+    "price": "$33.33 PP and $55.00 for two",
+    "instructor": "Mel"
   },
   {
-    "Date": "Oct. 15, Sunday",
-    "time": "8AM - 12PM",
-    "event": "LT Reiki VI",
-    "price": "$260",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 15, Sunday",
+    "Date": "Nov. 13, Monday",
     "time": "6:15PM",
     "event": "New Moon Reiki Circle",
     "price": "$25",
-    "instructor": "MJ/Diana/Angel/Mel"
+    "instructor": "MJ/Diana/Angel"
   },
   {
-    "Date": "Oct. 16, Monday",
-    "time": "8AM - 12PM",
-    "event": "LT VIII",
-    "price": "$260",
-    "instructor": "Kim"
+    "Date": "Nov. 16, Thursday",
+    "time": "6:15PM",
+    "event": "Learning to See Auras with MJ",
+    "price": "$44.44",
+    "instructor": "MJ"
   },
   {
-    "Date": "October 16, Monday",
-    "time": "5:30PM - 8:30PM",
-    "event": "LT Reiki VIII",
-    "price": "$260",
-    "instructor": "Kim"
+    "Date": "Nov. 17, Friday",
+    "time": "7:00PM - 9:00PM",
+    "event": "Make An Antler/Feathreed Smudged Stick to Cleanse your Feast & Family Space for Thanksgiving. Feel Free to Bring Ribbon All other supplies included",
+    "price": "$55.55",
+    "instructor": "Lee"
   },
   {
-    "Date": "Oct. 19, Thursday",
-    "time": "7 - 9:30PM",
-    "event": "Chakra 1",
-    "price": "$85",
-    "instructor": "Kim"
+    "Date": "Nov. 23, Thursday",
+    "time": "-",
+    "event": "All Esmeralda's Stores will be closed! Enjoy Your Day!",
+    "price": "-",
+    "instructor": "-"
   },
   {
-    "Date": "Oct. 20, Friday",
-    "time": "5:30PM - 8:30PM",
-    "event": "Pendulum 1",
-    "price": "$55",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 21, Saturday",
-    "time": "8AM - 12PM",
-    "event": "Chakra 2",
-    "price": "$85",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 21, Saturday",
-    "time": "5PM - 9:30PM",
-    "event": "LT IX",
-    "price": "$260",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 22, Sunday",
-    "time": "8AM - 12PM",
-    "event": "LT Reiki I",
-    "price": "$180",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 22, Sunday",
-    "time": "5PM - 9:30PM",
-    "event": "LT XII",
-    "price": "$400",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 23, Monday",
-    "time": "9AM - 11AM",
-    "event": "Chakra 6",
-    "price": "$85",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 23, Monday",
-    "time": "1PM - 3PM",
-    "event": "Chakra 5",
-    "price": "$85",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 23, Monday",
-    "time": "5PM - 9:30PM",
-    "event": "LT VII",
-    "price": "$260",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 24, Tuesday",
-    "time": "8AM - 12PM",
-    "event": "LT Reiki V",
-    "price": "$260",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 25, Wednesday",
-    "time": "6PM - 8PM",
-    "event": "Chakra 3",
-    "price": "$85",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 26, Thursday",
-    "time": "6PM - 8:30PM",
-    "event": "Chakra 4",
-    "price": "$85",
-    "instructor": "Kim"
-  },
-  {
-    "Date": "Oct. 28, Saturday",
+    "Date": "Nov. 27, Mon",
     "time": "6:15PM",
     "event": "Full Moon Drum Circle ",
     "price": "$25",
-    "instructor": "MJ/Diana/Angel/Mel"
-  },
-  {
-    "Date": "Oct. 29,Sunday",
-    "time": "8:30PM",
-    "event": "Broom Crafting Class",
-    "price": "$44.44",
-    "instructor": "Mel"
-  },
-  {
-    "Date": "Oct. 29, Sunday",
-    "time": "6:20PM",
-    "event": "Hekate Guided Meditation",
-    "price": "$33.33/$55.55 FOR 2",
-    "instructor": "Mel"
-  },
-  {
-    "Date": "Oct. 31, Tuesday",
-    "time": "-",
-    "event": "Halloween"
+    "instructor": "MJ/Diana/Angel"
   }
 ]

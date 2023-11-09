@@ -17,6 +17,7 @@
     "@mui/material": "^5.14.11",
     "@mui/system": "^5.14.11",
     "@mui/x-date-pickers": "^6.15.0",
+    "@square/web-sdk": "^2.0.1",
     "axios": "^1.5.1",
     "dayjs": "^1.11.10",
     "dotenv": "^16.3.1",
@@ -24,8 +25,12 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.6.2",
     "next": "13.4.19",
+    "next-transpile-modules": "^10.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-square-web-payments-sdk": "^3.2.1",
+    "square": "^32.0.0",
+    "square-connect": "^6.20201216.0"
   },
   "devDependencies": {
     "sass": "^1.66.1"

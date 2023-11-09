@@ -1,9 +1,8 @@
-import * as React from 'react';
-import { CreditCard } from 'react-square-web-payments-sdk'
-import { PaymentForm, Ach } from 'react-square-web-payments-sdk';
+import * as React from "react";
+import { CreditCard, PaymentsForm, Ach } from "react-square-web-payments-sdk";
 
-const MyPaymentForm = () => (
-  <PaymentForm
+const BookingForm = () => (
+  <PaymentsForm
     /**
      * Identifies the calling form with a verified application ID generated from
      * the Square Application Dashboard.
@@ -14,17 +13,17 @@ const MyPaymentForm = () => (
      * request. The result will be a valid credit card or wallet token, or an error.
      */
     cardTokenizeResponseReceived={async (token, buyer) => {
-            const response = await fetch("/api/pay", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                sourceId: token.token,
-              }),
-            });
-            alert(JSON.stringify(await response.json(), null, 2));
-          }}
+      const response = await fetch("/api/pay", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          sourceId: token.token,
+        }),
+      });
+      alert(JSON.stringify(await response.json(), null, 2));
+    }}
     /**
      * This function enable the Strong Customer Authentication (SCA) flow
      *
@@ -32,17 +31,17 @@ const MyPaymentForm = () => (
      * the chance of fraudulent transactions.
      */
     createVerificationDetails={() => ({
-      amount: '1.00',
+      amount: "1.00",
       /* collected from the buyer */
       billingContact: {
-        addressLines: ['123 Main Street', 'Apartment 1'],
-        familyName: 'Doe',
-        givenName: 'John',
-        countryCode: 'GB',
-        city: 'London',
+        addressLines: ["123 Main Street", "Apartment 1"],
+        familyName: "Doe",
+        givenName: "John",
+        countryCode: "GB",
+        city: "London",
       },
-      currencyCode: 'GBP',
-      intent: 'CHARGE',
+      currencyCode: "GBP",
+      intent: "CHARGE",
     })}
     /**
      * Identifies the location of the merchant that is taking the payment.
@@ -51,8 +50,7 @@ const MyPaymentForm = () => (
     locationId="LX0RNJ1WCPC2H"
   >
     <CreditCard />
-    <Ach accountHolderName="John Don't" redirectURI="https://example.com" transactionId="54321" />
-  </PaymentForm>
+  </PaymentsForm>
 );
 
-export default MyPaymentForm;
+export default BookingForm;

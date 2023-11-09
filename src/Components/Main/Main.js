@@ -101,8 +101,8 @@ const Main = () => {
         <div className="instructor__container">
           <Image className="instructor__image" src="/mj.JPG" width={700} height={800} />
           <article className="instructor">
-        <h3 className="instructor__title">Your reiki master teacher and guide</h3>
-        <h2 className="instructor__title">MJ Gonzalez</h2>
+            <h3 className="instructor__title">Reverend, Master Therapist of Light Therapy, Reiki, and Energist</h3>
+            <h2 className="instructor__title">MJ Gonzalez</h2>
             <div className="instructor__about">
               <p className="instructor__text">
                 Rev. MJ Gonzalez's spiritual journey began at the tender age of 6 when she had her first profound encounter with the Divine. It
@@ -146,9 +146,7 @@ const Main = () => {
               ))}
             </section>
           </section>
-          <div className="cauley__hours">
-
-          </div>
+          <div className="cauley__hours"></div>
         </div>
         <section className="events">
           <div className="events__container">

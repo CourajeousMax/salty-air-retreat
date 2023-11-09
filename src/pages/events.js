@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/Components/Header/Header";
 import NavBar from "../Components/NavBar/NavBar";
 import AppointmentForm from "@/Components/AppointmentForm/AppointmentForm";
+import AppointmentDate from "@/Components/AppointmentDate/AppointmentDate";
 import Schedule from "@/Components/Schedule/Schedule";
 import Footer from "@/Components/Footer/Footer";
 import Image from "next/image";
@@ -15,6 +16,8 @@ import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
 import { styled } from "@mui/system";
 //implement caalendar here
 const events = () => {
+  const [remainingSlots, setRemainingSlots] = useState(14);
+
   const CustomMuiPickersLayoutRoot = styled("div")({
     display: "grid",
     gridAutoColumns: "max-content auto max-content",
@@ -27,7 +30,7 @@ const events = () => {
   });
 function YourComponent() {
   useEffect(() => {
-    document.querySelector('.signup__form').addEventListener('submit', function (e) {
+    document.querySelector(".signup__form").addEventListener("submit", function (e) {
       e.preventDefault();
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
@@ -37,11 +40,12 @@ function YourComponent() {
         alert("Please fill in all fields.");
         return;
       }
+      setRemainingSlots(remainingSlots - 1);
       this.submit();
     });
-  }, []); 
-
+  }, []);
 }
+
   return (
     <div>
       <Header />
@@ -82,12 +86,13 @@ function YourComponent() {
           <CustomMuiPickersLayoutRoot>
             <StaticDatePicker orientation="portrait" />
           </CustomMuiPickersLayoutRoot>
-          <form className="signup__form" action="https://formsubmit.co/stephany.munoz8@gmail.com" method="POST">
+          <form className="signup__form" action="https://formsubmit.co/stephany.munoz8@gmail.com"  method="POST" >
             <h2 className="signup__page-header">Book an appointment today!</h2>
             <div className="signup__container">
-              <AppointmentForm label="Name:" name="Name" type="text"  id="name" />
-              <AppointmentForm label="Email:" name="Email" type="email"  id="email"/>
-              <AppointmentForm label="Phone Number:" name="Phone Number" type="tel"  id="phoneNumber"/>
+              <AppointmentForm label="Name:" name="Name" type="text" id="name" />
+              <AppointmentForm label="Email:" name="Email" type="email" id="email" />
+              <AppointmentDate />
+              <AppointmentForm label="Phone Number:" name="Phone Number" type="tel" id="phoneNumber" />
               <AppointmentForm label="Message:" name="Message" type="text" id="Message" />
               <button className="signup__form-button">
                 <p className="signup__form-button--text">Book</p>
@@ -96,6 +101,7 @@ function YourComponent() {
           </form>
         </div>
       </LocalizationProvider>
+      <p>Remaining slots: {remainingSlots}</p>
       <div className="signup__warning">
         <p>
           <strong>Disclaimer:</strong> We are committed to maintaining a safe and secure environment, but we cannot guarantee the absolute prevention
