@@ -30,7 +30,8 @@
     "react-dom": "18.2.0",
     "react-square-web-payments-sdk": "^3.2.1",
     "square": "^32.0.0",
-    "square-connect": "^6.20201216.0"
+    "square-connect": "^6.20201216.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "sass": "^1.66.1"
