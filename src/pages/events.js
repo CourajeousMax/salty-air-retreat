@@ -47,7 +47,7 @@ const events = () => {
       <section className="info">
         <div className="info__container">
           <div className="info__item">
-            <Image src={Stars} className="info__mobile" width={375} height={500} alt="Stars Image"/>
+            <Image src={Stars} className="info__mobile" width={375} height={500} alt="Stars Image" />
             <h2 className="info__text">Classes & Events</h2>
             <p className="info__subtext">
               There are a variety of classes and events to attend. From Reiki Circles, Mala Making and Chanting, Chime Classes to Guided Meditations
@@ -55,7 +55,7 @@ const events = () => {
             </p>
           </div>
           <div className="info__item">
-            <Image src={Sunrise} className="info__mobile" width={400} height={500} alt="Sunrise Image"/>
+            <Image src={Sunrise} className="info__mobile" width={400} height={500} alt="Sunrise Image" />
             <h2 className="info__text">Guidance & Mentorship</h2>
             <p className="info__subtext">
               Walk your sacred path and find solace in the assurance that you are not alone in your quest for inner peace and enlightment. In the
@@ -64,7 +64,7 @@ const events = () => {
             </p>
           </div>
           <div className="info__item">
-            <Image src={Plants} className="info__mobile" width={400} height={500} alt="Plant Image"/>
+            <Image src={Plants} className="info__mobile" width={400} height={500} alt="Plant Image" />
             <h2 className="info__text">Start your spriritual journey today</h2>
             <p className="info__subtext">
               Your spiritual journey begins with a simple commitment—to seek, to learn, to grow. It is a quest to understand the essence of your
@@ -75,11 +75,34 @@ const events = () => {
         </div>
       </section>
       <Schedule />
-
+      <p className="signup__fact">
+        <strong>Please remember to wear sock at all times inside the cave! Food and drinks are not permitted inside the cave. Thank you!☻</strong>
+      </p>
       <div className="signup">
-        <Image src={Candle} classname="signup__image" width={400} height={500} alt="Candle Image"/>
+        <Image
+          src={Candle}
+          classname="signup__image"
+          width={500}
+          height={600}
+          style={{
+            borderRadius: "25px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            padding: "1rem",
+          }}
+          alt="Candle Image"
+        />
+        <div className="signup__border"></div>
         <form className="signup__form" action="https://formsubmit.co/stephany.munoz8@gmail.com" method="POST">
           <h2 className="signup__page-header">Contact Us!</h2>
+          <p className="signup__remember">
+            Thank you for considering us! Feel free to contact us at{" "}
+            <strong>
+              <a href="tel:+13055620090" className="contact-link">
+                (305)-562-0090
+              </a>{" "}
+            </strong>{" "}
+            with any further questions or to proceed with the payment to complete your booking process. We look forward to assisting you!
+          </p>
           <div className="signup__container">
             <AppointmentForm label="Name:" name="Name" type="text" id="name" />
             <AppointmentForm label="Email:" name="Email" type="email" id="email" />
@@ -93,7 +116,7 @@ const events = () => {
         </form>
       </div>
       <div className="signup__warning">
-        <p>
+        <p className="signup__disclaimer">
           <strong>Disclaimer:</strong> We are committed to maintaining a safe and secure environment, but we cannot guarantee the absolute prevention
           of fraudulent activities. We will never send a message asking for money or offer readings. Please exercise caution, report suspicious
           behavior, and protect your personal information.
