@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { CreditCard } from 'react-square-web-payments-sdk'
 import { PaymentForm, Ach } from 'react-square-web-payments-sdk';
-
 const MyPaymentForm = () => (
   <PaymentForm
     /**
@@ -53,6 +52,7 @@ const MyPaymentForm = () => (
     <CreditCard />
     <Ach accountHolderName="John Don't" redirectURI="https://example.com" transactionId="54321" />
   </PaymentForm>
+
 );
 
 export default MyPaymentForm;

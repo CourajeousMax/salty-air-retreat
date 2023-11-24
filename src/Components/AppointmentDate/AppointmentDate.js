@@ -17,7 +17,7 @@ const AppointmentDate = () => {
           ))}
         </select>
       </div>
-      <div className="time">
+      {/* <div className="time">
         <label htmlFor="timeSelect">Select a Time:</label>
         <select id="timeSelect" name="Time">
           {availableTimes.map((time, index) => (
@@ -26,7 +26,7 @@ const AppointmentDate = () => {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
     </div>
   );
 };

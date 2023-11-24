@@ -1,58 +1,16 @@
 [
   {
-    "Date": "Nov. 3, Friday",
-    "time": "7:00PM - 9:00PM",
-    "event": "Mala Making Class, Materials Included",
-    "price": "$55.55",
-    "instructor": "Lee"
-  },
-  {
-    "Date": "Nov. 10, Friday",
-    "time": "7:00PM - 9:00PM",
-    "event": "Learn To Make a Crystal - Suggested tools: Glue Guns W/ Glue & Crystal of your Choice",
-    "price": "$55.55",
-    "instructor": "Lee"
-  },
-  {
-    "Date": "Nov. 11, Saturday",
-    "time": "8:30AM - 10:00PM",
-    "event": "2 in 1 Guided Meditation & Make your own Agate Wind Chime",
-    "price": "$33.33 PP and $55.00 for two",
-    "instructor": "Mel"
-  },
-  {
-    "Date": "Nov. 13, Monday",
-    "time": "6:15PM",
-    "event": "New Moon Reiki Circle",
-    "price": "$25",
-    "instructor": "MJ/Diana/Angel"
-  },
-  {
-    "Date": "Nov. 16, Thursday",
-    "time": "6:15PM",
-    "event": "Learning to See Auras with MJ",
-    "price": "$44.44",
-    "instructor": "MJ"
-  },
-  {
-    "Date": "Nov. 17, Friday",
-    "time": "7:00PM - 9:00PM",
-    "event": "Make An Antler/Feathreed Smudged Stick to Cleanse your Feast & Family Space for Thanksgiving. Feel Free to Bring Ribbon All other supplies included",
-    "price": "$55.55",
-    "instructor": "Lee"
-  },
-  {
-    "Date": "Nov. 23, Thursday",
-    "time": "-",
-    "event": "All Esmeralda's Stores will be closed! Enjoy Your Day!",
-    "price": "-",
-    "instructor": "-"
-  },
-  {
     "Date": "Nov. 27, Mon",
     "time": "6:15PM",
     "event": "Full Moon Drum Circle ",
     "price": "$25",
     "instructor": "MJ/Diana/Angel"
+  },
+  {
+    "Date": "Choose Date",
+    "time": "Pick a Time",
+    "event": "Other",
+    "price": "TBA",
+    "instructor": "TBA"
   }
 ]
