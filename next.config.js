@@ -2,6 +2,7 @@
 
 const path = require("path");
 
+const withTM = require('next-transpile-modules')(['@square/web-sdk', 'react-square-web-payments-sdk'])
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
@@ -9,4 +10,12 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig, withTM({
+  env: {
+    SQUARE_ACCESS_TOKEN: process.env.SQUARE_ACCESS_TOKEN || "",
+  },
+  reactStrictMode: true,
+  experimental: {
+    esmExternals: 'loose'
+  }
+})

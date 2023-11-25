@@ -12,12 +12,7 @@ const Footer = () => {
             <a className="footer__icon" href="https://www.instagram.com/esmeraldassaltyairretreat/?hl=en" target="_blank" rel="noopener noreferrer">
               <Instagram style={{ fontSize: "36px" }} />
             </a>
-            <a
-              className="footer__icon"
-              href="https://www.facebook.com/EsmeraldasEarthWindAndFireBoutiqueLLC/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="footer__icon" href="https://www.facebook.com/profile.php?id=100067194408450" target="_blank" rel="noopener noreferrer">
               <Facebook style={{ fontSize: "36px" }} />
             </a>
             <a className="footer__icon" href="https://www.youtube.com/@esmeraldasearthwindandfire4390" target="_blank" rel="noopener noreferrer">

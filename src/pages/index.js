@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import NavBar from "@/Components/NavBar/NavBar";
+
 import Header from "@/Components/Header/Header";
 import Main from "@/Components/Main/Main";
 
