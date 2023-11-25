@@ -13,6 +13,7 @@ import Candle from "../../public/candle.jpg";
 import { styled } from "@mui/system";
 //implement caalendar here
 const events = () => {
+  const bookingUrl = "https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start";
   const CustomMuiPickersLayoutRoot = styled("div")({
     display: "grid",
     gridAutoColumns: "max-content auto max-content",
@@ -76,8 +77,20 @@ const events = () => {
       </section>
       <Schedule />
       <p className="signup__fact">
-        <strong>Please remember to wear sock at all times inside the cave! Food and drinks are not permitted inside the cave. Thank you!☻</strong>
+        <strong>
+          Please remember to wear sock at all times inside the cave and bring a blanket and/or comfy clothes as it can get cold! Food and drinks are
+          not permitted inside the cave. Thank you!☻
+        </strong>
       </p>
+          <div className="booking">
+            <p className="booking__text">
+              Experience ultimate relaxation in our rejuvenating salt cave. Book your appointment now and embark on a journey of tranquility and wellness.
+              Your serene escape awaits!
+            </p>
+            <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+              <button className="booking__button">Book Now</button>
+            </a>
+          </div>
       <div className="signup">
         <Image
           src={Candle}

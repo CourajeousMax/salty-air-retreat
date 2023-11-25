@@ -8,14 +8,14 @@ const AppointmentDate = () => {
   return (
     <div>
       <div className="date">
-        <label htmlFor="eventSelect">Select an Event:</label>
+        {/* <label htmlFor="eventSelect">Select an Event:</label>
         <select id="eventSelect" name="Event">
           {events.map((event, index) => (
             <option key={index} value={event.event}>
               {event.event}
             </option>
           ))}
-        </select>
+        </select> */}
       </div>
       {/* <div className="time">
         <label htmlFor="timeSelect">Select a Time:</label>

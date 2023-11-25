@@ -365,17 +365,39 @@ body {
     height: 2.8vw;
   }
 }
+.booking {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__text {
+    font-size: 1.2rem;
+  }
+  &__button {
+    margin-top: 24px;
+    border: none;
+    border-radius: 1.25rem;
+    width: 12rem;
+    height: 4vh;
+    background-color: blue;
+    box-shadow: 0px 0px 25px 0px rgba(15, 34, 126, 1);
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 .signup {
   min-height: calc(100vh - 25rem);
-  padding-top: 5rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   &__border {
-    border-left: 4px solid #323232; /* Adjust the color as needed */
-    height: 8rem; /* Adjust the height of the border */
+    border-left: 4px solid #323232; 
+    height: 8rem; 
   }
-  &__fact{
+  &__fact {
     font-size: 1.2rem;
     padding: 1rem;
     display: flex;
@@ -413,9 +435,9 @@ body {
   }
 }
 .contact-link {
-  color: #007bff; /* Change the color to your preferred color */
-  text-decoration: none; /* Remove the default underline */
-  font-weight: bold; /* Optional: Add bold font weight */
+  color: #007bff; 
+  text-decoration: none; 
+  font-weight: bold; 
 }
 .input {
   &__box {
@@ -437,6 +459,7 @@ body {
     }
   }
 }
+
 li {
   list-style: none;
 }
