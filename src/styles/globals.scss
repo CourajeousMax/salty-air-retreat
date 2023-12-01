@@ -366,19 +366,34 @@ body {
   }
 }
 .booking {
+  background-image: url("../../public/aesthetic-boho.jpg");
+  margin: 6rem;
   padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: $white;
+  }
   &__text {
     font-size: 1.2rem;
+    background-color: $white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
   }
   &__button {
+    font-size: 1.2rem;
     margin-top: 24px;
     border: none;
     border-radius: 1.25rem;
     width: 12rem;
-    height: 4vh;
+    height: 6vh;
     background-color: blue;
     box-shadow: 0px 0px 25px 0px rgba(15, 34, 126, 1);
     color: white;
@@ -394,8 +409,8 @@ body {
   justify-content: space-evenly;
   align-items: center;
   &__border {
-    border-left: 4px solid #323232; 
-    height: 8rem; 
+    border-left: 4px solid #323232;
+    height: 8rem;
   }
   &__fact {
     font-size: 1.2rem;
@@ -435,9 +450,9 @@ body {
   }
 }
 .contact-link {
-  color: #007bff; 
-  text-decoration: none; 
-  font-weight: bold; 
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 .input {
   &__box {

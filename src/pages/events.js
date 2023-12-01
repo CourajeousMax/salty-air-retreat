@@ -9,7 +9,10 @@ import Stars from "../../public/stars.jpg";
 import Sunrise from "../../public/sunrise.jpg";
 import Plants from "../../public/plants.jpg";
 import Candle from "../../public/candle.jpg";
-
+import Product from "../../public/salt-product.jpg";
+import Shop from "../../public/salt-shop.jpg";
+import Main from "../../public/salt-main.jpg";
+import Private from "../../public/salt-private.jpg";
 import { styled } from "@mui/system";
 //implement caalendar here
 const events = () => {
@@ -82,15 +85,23 @@ const events = () => {
           not permitted inside the cave. Thank you!☻
         </strong>
       </p>
-          <div className="booking">
-            <p className="booking__text">
-              Experience ultimate relaxation in our rejuvenating salt cave. Book your appointment now and embark on a journey of tranquility and wellness.
-              Your serene escape awaits!
-            </p>
-            <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
-              <button className="booking__button">Book Now</button>
-            </a>
-          </div>
+      <div className="booking">
+        <div className="booking__container">
+          <Image src={Product} className="info__mobile" width={500} height={300} alt="Salt Product" />
+          <Image src={Shop} className="info__mobile" width={500} height={300} alt="Salt Indoor Shop" />
+          <Image src={Main} className="info__mobile" width={500} height={400} alt="Main Salt Cave" />
+          <Image src={Private} className="info__mobile" width={500} height={400} alt="Private Salt Cave" />
+        </div>
+        <p className="booking__text">
+          Experience ultimate relaxation in our rejuvenating salt cave. Elevate your experience by exploring our exquisite range of salt products,
+          meticulously crafted to promote wellness and relaxation. From invigorating salt scrubs to soothing salt lamps, each item has been
+          thoughtfully selected to complement your escape into serenity. Book your appointment now and embark on a journey of tranquility and wellness.
+          Your serene escape awaits!
+        </p>
+        <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+          <button className="booking__button">Book Now</button>
+        </a>
+      </div>
       <div className="signup">
         <Image
           src={Candle}
