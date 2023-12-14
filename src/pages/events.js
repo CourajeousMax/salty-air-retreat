@@ -17,16 +17,7 @@ import { styled } from "@mui/system";
 //implement caalendar here
 const events = () => {
   const bookingUrl = "https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start";
-  const CustomMuiPickersLayoutRoot = styled("div")({
-    display: "grid",
-    gridAutoColumns: "max-content auto max-content",
-    gridAutoRows: "max-content auto max-content",
-    overflow: "hidden",
-    minWidth: "320px",
-    backgroundColor: "#fff",
-    justifyContent: "start",
-    margin: "48px 90px",
-  });
+
   function YourComponent() {
     useEffect(() => {
       document.querySelector(".signup__form").addEventListener("submit", function (e) {

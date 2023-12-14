@@ -29,7 +29,7 @@ const Footer = () => {
                 Email:
               </strong>
               <a className="footer__email" href="mailto: esmeraldassaltyairretreat@gmail.com">
-                esmeraldassaltyairretreat@gmail.com{" "}
+                 esmeraldassaltyairretreat@gmail.com{" "}
               </a>
             </p>
             <p style={{ color: "white" }}>
