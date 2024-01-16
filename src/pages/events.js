@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "@/Components/Header/Header";
 import AppointmentForm from "@/Components/AppointmentForm/AppointmentForm";
-import AppointmentDate from "@/Components/AppointmentDate/AppointmentDate";
 import Schedule from "@/Components/Schedule/Schedule";
 import Footer from "@/Components/Footer/Footer";
 import Image from "next/image";
@@ -9,21 +8,14 @@ import Stars from "../../public/stars.jpg";
 import Sunrise from "../../public/sunrise.jpg";
 import Plants from "../../public/plants.jpg";
 import Candle from "../../public/candle.jpg";
+import Product from "../../public/salt-product.jpg";
+import Shop from "../../public/salt-shop.jpg";
+import Main from "../../public/salt-main.jpg";
+import Private from "../../public/salt-private.jpg";
 
-import { styled } from "@mui/system";
-//implement caalendar here
 const events = () => {
   const bookingUrl = "https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start";
-  const CustomMuiPickersLayoutRoot = styled("div")({
-    display: "grid",
-    gridAutoColumns: "max-content auto max-content",
-    gridAutoRows: "max-content auto max-content",
-    overflow: "hidden",
-    minWidth: "320px",
-    backgroundColor: "#fff",
-    justifyContent: "start",
-    margin: "48px 90px",
-  });
+
   function YourComponent() {
     useEffect(() => {
       document.querySelector(".signup__form").addEventListener("submit", function (e) {
@@ -82,15 +74,23 @@ const events = () => {
           not permitted inside the cave. Thank you!☻
         </strong>
       </p>
-          <div className="booking">
-            <p className="booking__text">
-              Experience ultimate relaxation in our rejuvenating salt cave. Book your appointment now and embark on a journey of tranquility and wellness.
-              Your serene escape awaits!
-            </p>
-            <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
-              <button className="booking__button">Book Now</button>
-            </a>
-          </div>
+      <div className="booking">
+        <div className="booking__container">
+          <Image src={Product} className="info__mobile" width={500} height={300} alt="Salt Product" />
+          <Image src={Shop} className="info__mobile" width={500} height={300} alt="Salt Indoor Shop" />
+          <Image src={Main} className="info__mobile" width={500} height={400} alt="Main Salt Cave" />
+          <Image src={Private} className="info__mobile" width={500} height={400} alt="Private Salt Cave" />
+        </div>
+        <p className="booking__text">
+          Experience ultimate relaxation in our rejuvenating salt cave. Elevate your experience by exploring our exquisite range of salt products,
+          meticulously crafted to promote wellness and relaxation. From invigorating salt scrubs to soothing salt lamps, each item has been
+          thoughtfully selected to complement your escape into serenity. Book your appointment now and embark on a journey of tranquility and wellness.
+          Your serene escape awaits!
+        </p>
+        <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+          <button className="booking__button">Book Now</button>
+        </a>
+      </div>
       <div className="signup">
         <Image
           src={Candle}
@@ -119,7 +119,6 @@ const events = () => {
           <div className="signup__container">
             <AppointmentForm label="Name:" name="Name" type="text" id="name" />
             <AppointmentForm label="Email:" name="Email" type="email" id="email" />
-            <AppointmentDate />
             <AppointmentForm label="Phone Number:" name="Phone Number" type="tel" id="phoneNumber" />
             <AppointmentForm label="Message:" name="Message" type="text" id="Message" />
             <button className="signup__form-button">

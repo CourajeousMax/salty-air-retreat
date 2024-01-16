@@ -15,9 +15,7 @@ const Schedule = () => {
   const handleSave = async (updatedData) => {
     const result = await updateScheduleData(updatedData);
     if (result.message === "Schedule data updated successfully") {
-      // Data successfully updated
     } else {
-      // Handle errors
     }
   };
 

@@ -1,6 +1,146 @@
 [
   {
-    "Date": "Nov. 27, Mon",
+    "Date": "Jan. 10, Wed",
+    "time": "7PM - 9:30PM",
+    "event": "Chakra 1 ",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 11, Thur",
+    "time": "8AM - 11AM",
+    "event": "Chakra 6 ",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 11, Thur",
+    "time": "6:15PM",
+    "event": "New Moon Reiki Circle ",
+    "price": "$25",
+    "instructor": "MJ/Diana/Angel"
+  },
+  {
+    "Date": "Jan. 12, Fri",
+    "time": "5:30 PM-8:30PM",
+    "event": "Pendulum 1 ",
+    "price": "$55",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 13, Sat",
+    "time": "8AM - 10AM",
+    "event": "Chakra 3 ",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 13, Sat",
+    "time": "5PM - 9PM",
+    "event": "Light Therapy Reiki I",
+    "price": "$180",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 14, Sun",
+    "time": "8AM - 1PM",
+    "event": "Light Therapy III",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 14, Sun",
+    "time": "6PM - 9PM",
+    "event": "Chakra 2 ",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 15, Mon",
+    "time": "12PM - 4PM",
+    "event": "Light Therapy VIII",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 16, Tues",
+    "time": "8AM - 12PM",
+    "event": "Light Therapy IX",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 16, Tues",
+    "time": "7PM - 9PM",
+    "event": "Chakra 5 ",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 17, Wed",
+    "time": "7PM - 9PM",
+    "event": "Chakra 4",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 19, Fri",
+    "time": "8AM - 12PM",
+    "event": "Light Therapy V",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 19, Fri",
+    "time": "5:30 PM-8:30PM",
+    "event": "Pendulum 1 ",
+    "price": "$55",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 20, Sat",
+    "time": "8AM - 12PM",
+    "event": "Light Therapy II",
+    "price": "$230",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 20, Sat",
+    "time": "1PM - 5PM",
+    "event": "Light Therapy X",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 20, Sat",
+    "time": "6PM - 10PM",
+    "event": "Light Therapy VI",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 21, Sun",
+    "time": "8AM - 12PM",
+    "event": "Light Therapy Reiki IV ",
+    "price": "$380",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 21, Sun",
+    "time": "1PM - 5PM",
+    "event": "Light Therapy VII",
+    "price": "$260",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 21, Sun",
+    "time": "6PM - 8PM",
+    "event": "Chakra 7",
+    "price": "$85",
+    "instructor": "Kim/MJ"
+  },
+  {
+    "Date": "Jan. 25, Thur",
     "time": "6:15PM",
     "event": "Full Moon Drum Circle ",
     "price": "$25",
