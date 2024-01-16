@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Instagram, Facebook } from "@mui/icons-material";
 
 const NavBar = () => {

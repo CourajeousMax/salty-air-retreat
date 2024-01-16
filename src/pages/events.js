@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "@/Components/Header/Header";
 import AppointmentForm from "@/Components/AppointmentForm/AppointmentForm";
-import AppointmentDate from "@/Components/AppointmentDate/AppointmentDate";
 import Schedule from "@/Components/Schedule/Schedule";
 import Footer from "@/Components/Footer/Footer";
 import Image from "next/image";
@@ -13,8 +12,7 @@ import Product from "../../public/salt-product.jpg";
 import Shop from "../../public/salt-shop.jpg";
 import Main from "../../public/salt-main.jpg";
 import Private from "../../public/salt-private.jpg";
-import { styled } from "@mui/system";
-//implement caalendar here
+
 const events = () => {
   const bookingUrl = "https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start";
 
@@ -121,7 +119,6 @@ const events = () => {
           <div className="signup__container">
             <AppointmentForm label="Name:" name="Name" type="text" id="name" />
             <AppointmentForm label="Email:" name="Email" type="email" id="email" />
-            <AppointmentDate />
             <AppointmentForm label="Phone Number:" name="Phone Number" type="tel" id="phoneNumber" />
             <AppointmentForm label="Message:" name="Message" type="text" id="Message" />
             <button className="signup__form-button">
