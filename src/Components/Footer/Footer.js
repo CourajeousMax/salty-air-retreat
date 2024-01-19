@@ -29,7 +29,7 @@ const Footer = () => {
                 Email:
               </strong>
               <a className="footer__email" href="mailto: esmeraldassaltyairretreat@gmail.com">
-                 esmeraldassaltyairretreat@gmail.com{" "}
+                esmeraldassaltyairretreat@gmail.com{" "}
               </a>
             </p>
             <p style={{ color: "white" }}>
@@ -37,7 +37,9 @@ const Footer = () => {
                 <Phone />
                 Phone:&nbsp;
               </strong>
-              (305)-562-0090
+              <a style={{ color: "white" }} href="tel:3055620090">
+                (305)-562-0090
+              </a>
             </p>
             <address style={{ color: "white" }}>12307 SW 224th St, Miami, FL 33170</address>
           </section>

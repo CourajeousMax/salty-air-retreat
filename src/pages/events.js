@@ -76,16 +76,16 @@ const events = () => {
       </p>
       <div className="booking">
         <div className="booking__container">
-          <Image src={Product} className="info__mobile" width={500} height={300} alt="Salt Product" />
-          <Image src={Shop} className="info__mobile" width={500} height={300} alt="Salt Indoor Shop" />
-          <Image src={Main} className="info__mobile" width={500} height={400} alt="Main Salt Cave" />
-          <Image src={Private} className="info__mobile" width={500} height={400} alt="Private Salt Cave" />
+          <Image src={Product} className="info__shop" width={500} height={300} alt="Salt Product" />
+          <Image src={Shop} className="info__shop" width={500} height={300} alt="Salt Indoor Shop" />
+          <Image src={Main} className="info__shop" width={500} height={400} alt="Main Salt Cave" />
+          <Image src={Private} className="info__shop" width={500} height={400} alt="Private Salt Cave" />
         </div>
         <p className="booking__text">
           Experience ultimate relaxation in our rejuvenating salt cave. Elevate your experience by exploring our exquisite range of salt products,
           meticulously crafted to promote wellness and relaxation. From invigorating salt scrubs to soothing salt lamps, each item has been
-          thoughtfully selected to complement your escape into serenity. Book your appointment now and embark on a journey of tranquility and wellness.
-          Your serene escape awaits!
+          thoughtfully selected to complement your escape into serenity. Book your appointment now and embark on a journey of tranquility and
+          wellness. Your serene escape awaits!
         </p>
         <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
           <button className="booking__button">Book Now</button>
@@ -105,7 +105,7 @@ const events = () => {
           alt="Candle Image"
         />
         <div className="signup__border"></div>
-        <form className="signup__form" action="https://formsubmit.co/stephany.munoz8@gmail.com" method="POST">
+        <form className="signup__form" action="https://formsubmit.co/esmeraldassaltyairretreat@gmail.com" method="POST">
           <h2 className="signup__page-header">Contact Us!</h2>
           <p className="signup__remember">
             Thank you for considering us! Feel free to contact us at{" "}
