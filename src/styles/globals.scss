@@ -126,8 +126,7 @@ body {
 
   &__item {
     flex: 1;
-    padding: 2rem;
-    margin: 1rem;
+    padding: 3rem;
     position: relative;
     text-align: center;
   }
@@ -540,6 +539,13 @@ body {
   @include desktop {
     flex-direction: row;
   }
+  &__image {
+    width: 50%;
+    height: 50%;
+    @include tablet {
+
+    }
+  }
   &__border {
     border-top: 4px solid #323232;
     height: 8rem;
@@ -635,7 +641,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 10rem;
   @include tablet {
     padding: 2rem;
   }

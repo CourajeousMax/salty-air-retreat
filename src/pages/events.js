@@ -95,8 +95,8 @@ const events = () => {
         <Image
           src={Candle}
           classname="signup__image"
-          width={500}
-          height={600}
+          width={450}
+          height={500}
           style={{
             borderRadius: "25px",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
