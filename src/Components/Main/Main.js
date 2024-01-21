@@ -108,12 +108,9 @@ const Main = () => {
                 Rev. MJ Gonzalez's spiritual journey began at the tender age of 6 when she had her first profound encounter with the Divine. It
                 happened while she was standing by her beloved creek behind her childhood home, where she witnessed her initial apparition. This early
                 connection with the spiritual realm bestowed upon her the gift of the Clairs, including Clairsentience, Clairvoyance, Clairaudience,
-                Claircognizance, Clairalience, Clairgustance, and more. As she matured, these intuitive abilities only grew stronger.
-              </p>
-              <p className="instructor__text">
-                Her diverse spiritual skill set encompasses an array of modalities, among which are Clairsentience, Clairvoyance, Clairaudience,
                 Claircognizance, Clairalience, Clairgustance, and the capability to perform Home, Office, and Vehicle Energy Clearing, Cleansing, and
-                Protection Gridding – a skill set that involves addressing entities, spirits, ghosts, energies, implants, and portals.
+                Protection Gridding – a skill set that involves addressing entities, spirits, ghosts, energies, implants, and portals. As she matured,
+                these intuitive abilities only grew stronger.
               </p>
               <p className="instructor__text">
                 Additionally, Rev. MJ Gonzalez specializes in Personal Manifestations, Home and Business Grid Work, Candle Imagery Reading, and the
