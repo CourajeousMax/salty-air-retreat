@@ -83,7 +83,7 @@ const Main = () => {
                 dust, allergens, and other pollutants. As the lamp heats up from the incandescent light source, the trapped particles remain locked in
                 the salt crystal. This purification process significantly reduces allergy symptoms and can even benefit individuals with asthma.
               </p>
-              <Image className="benefits__image" src="/cave_class.jpg" width={129} height={77} />
+              <Image className="benefits__image" src="/cave_class.JPG" width={129} height={77} />
               <p className="benefits__text">
                 Moreover, HSL release negative ions, which promote healthier breathing by enhancing cilia activity and filtering foreign particles,
                 potentially safeguarding against airborne germs. These negative ions can also boost energy levels, akin to the invigorating effects of
