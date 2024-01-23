@@ -10,6 +10,8 @@ const Main = () => {
     "A warm bath infused with Himalayan pink salt is also great for relaxing cramped muscles. The magnesium and some other trace minerals found in H.P.S. absorb through the skin to help heal damaged muscle and other soft tissues. Minerals in H.P.S. also work to fortify bones, skin, and connective tissues that may contribute to body soreness in other ways.",
     <strong>3. Detoxification</strong>,
     "When H.P.S. is added to a bath of warm (preferably about the same as body temperature) water, it not only provides much-needed nutrients to your body. Himalayan pink salt also works as a powerful detoxifier. When dissolved in water, H.P.S. becomes an ionic solution that helps to draw the toxins out of skin and adipose tissues. This process combined with the healing mineral infusion offered by a good Himalayan pink salt soak will leave you feeling refreshed and energized. Bath Salts: Bath salts are great for soaking in. The ancient Greeks even recommended seaside health resorts in order to help cure skin diseases, and 16th-century physician and alchemist Paracelsus proclaimed that a salt bath was 'better than all the health spas arising out of nature.' Himalayan salt baths take it to a whole new level. Since Himalayan Salt is rich in minerals, soaking in a solution of bath water infused with it allows the skin to soak up these minerals including calcium, copper, iodine, iron, magnesium, manganese, phosphorus, potassium, selenium, sodium, and zinc in a process known as dermal absorption.",
+    <strong>4. Benefits</strong>,
+    "Bath salts, particularly Himalayan salt baths, have a long history of promoting skin health and mineral absorption. The rich mineral content, including calcium, copper, iodine, and more, can be absorbed through the skin during soaking. These baths also aid in detoxification, helping remove some of the toxins we encounter daily. To use them for detox, it's recommended to shower first, then fill the tub with slightly above body temperature water. Dissolve the salts in the tub, add essential oils if desired, and soak for 30-40 minutes. Remember to stay hydrated by drinking water during your bath.",
   ];
   const renderedListItems = content.map((text, index) => (
     <li key={index} className="explaining__list-items">
@@ -22,7 +24,7 @@ const Main = () => {
         <section className="salt">
           <div className="salt__gallery-container">
             <div className="salt__gallery grid-container">
-              <Image className="grid__image" src="/lamp.jpg" width={395} height={250} />
+              <Image className="grid__image" src="/lamp.jpg" width={350} height={275} />
               <Image className="grid__image" src="/salt.jpg" width={375} height={250} />
               <Image className="grid__image" src="/hand-salt.jpg" width={400} height={350} />
               <Image className="grid__image" src="/lamps.jpg" width={400} height={300} />
@@ -64,13 +66,6 @@ const Main = () => {
           <h2 className="explaining__title">Soaking in Himalayan Salt: The Benefits</h2>
           <section className="explaining">
             <ol className="explaining__list">{renderedListItems}</ol>
-            <p className="explaining__paragraph">
-              Bath salts, particularly Himalayan salt baths, have a long history of promoting skin health and mineral absorption. The rich mineral
-              content, including calcium, copper, iodine, and more, can be absorbed through the skin during soaking. These baths also aid in
-              detoxification, helping remove some of the toxins we encounter daily. To use them for detox, it's recommended to shower first, then fill
-              the tub with slightly above body temperature water. Dissolve the salts in the tub, add essential oils if desired, and soak for 30-40
-              minutes. Remember to stay hydrated by drinking water during your bath.
-            </p>
           </section>
         </div>
         <section className="benefits">

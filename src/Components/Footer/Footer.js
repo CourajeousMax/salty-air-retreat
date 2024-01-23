@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
       <div className="footer__label">
         <p style={{ color: "white" }} className="footer__address">
-          CopyRight &copy; 2023 Esmeraldas Earth Wind And Fire Boutique LLC - All Rights Reserved.
+          CopyRight &copy; 2023 Esmeraldas Salty Air Retreat LLC - All Rights Reserved.
         </p>
       </div>
     </div>

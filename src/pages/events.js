@@ -36,8 +36,8 @@ const events = () => {
   return (
     <div>
       <Header />
-      <h1 className="info__title"> Discovering Inner Peace Here</h1>
       <section className="info">
+      <h1 className="info__title"> Discovering Inner Peace Here</h1>
         <div className="info__container">
           <div className="info__item">
             <Image src={Stars} className="info__mobile" width={375} height={500} alt="Stars Image" />
