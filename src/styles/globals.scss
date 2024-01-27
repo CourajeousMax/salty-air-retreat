@@ -153,7 +153,7 @@ body {
     padding: 5px;
     border-radius: 5px;
     top: auto;
-    bottom: 40px;
+    bottom: 50px;
     @include tablet {
       top: 50%;
       left: 50%;
@@ -264,8 +264,8 @@ body {
   }
 }
 .grid__image {
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
   @include tablet {
     width: 80%;
     height: 75%;
