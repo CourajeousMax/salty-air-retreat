@@ -162,7 +162,7 @@ body {
       padding: 15px;
       border-radius: 5px;
       top: auto;
-      bottom: 5px;
+      bottom: 0;
     }
   }
   &__mobile {
@@ -658,7 +658,7 @@ li {
   &__content {
     border-collapse: collapse;
     width: 100%;
-    margin: 2rem;
+    padding: 2rem;
     
   }
 }
