@@ -1,7 +1,9 @@
 import React from "react";
+import Video from 'next-video'
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer/Footer";
+
 const Main = () => {
   const content = [
     <strong>1. Mineral Soak</strong>,
@@ -62,6 +64,7 @@ const Main = () => {
             </div>
           </div>
         </section>
+
         <div className="explaining__container">
           <h2 className="explaining__title">Soaking in Himalayan Salt: The Benefits</h2>
           <section className="explaining">
@@ -92,7 +95,9 @@ const Main = () => {
             </div>
           </div>
         </section>
-
+        {/* <div className="video__wrapper">
+          <Video src={videoCave}/>
+        </div> */}
         <div className="instructor__container">
           <Image className="instructor__image" src="/mj.JPG" width={700} height={800} />
           <article className="instructor">
